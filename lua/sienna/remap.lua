@@ -7,6 +7,17 @@ vim.keymap.set("n", "<leader>go", vim.cmd.Ex)
 nnoremap("<leader>F", "<cmd>Format<cr>")
 nnoremap("<leader>f", "<cmd>FormatWrite<cr>")
 
+-- Nvimtree
+nnoremap("<C-h>", "<C-w>h")
+nnoremap("<C-l>", "<C-w>l")
+nnoremap("<C-j>", "<C-w>j")
+nnoremap("<C-k>", "<C-w>k")
+
+-- Buffers
+nnoremap("H", "<cmd>BufferLineCyclePrev<cr>")
+nnoremap("L", "<cmd>BufferLineCycleNext<cr>")
+
+
 -- TOGGLE DIAGNOSTICS ON AND OFF
 vim.g.diagnostics_active = false
 --function _G.toggle_diagnostics()

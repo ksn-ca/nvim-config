@@ -47,6 +47,54 @@ require("formatter").setup({
 			-- You can also define your own configuration
 		},
 
+		javascript = {
+			require("formatter.filetypes.javascript").prettierd,
+			-- "formatter.filetypes.lua" defines default configurations for the
+			-- "lua" filetype
+			function()
+				-- Full specification of configurations is down below and in Vim help
+				-- files
+				return {
+					exe = "prettierd",
+					args = {
+						"--write",
+						"--no-semi",
+                        "-use-tabs=false",
+                        "--single-quote",
+                        "--jsx-single-quote",
+						util.escape_path(util.get_current_buffer_file_path()),
+					},
+					stdin = true,
+				}
+			end,
+
+			-- You can also define your own configuration
+		},
+
+		javascriptreact = {
+			require("formatter.filetypes.javascriptreact").prettierd,
+			-- "formatter.filetypes.lua" defines default configurations for the
+			-- "lua" filetype
+			function()
+				-- Full specification of configurations is down below and in Vim help
+				-- files
+				return {
+					exe = "prettierd",
+					args = {
+						"--write",
+						"--no-semi",
+                        "-use-tabs=false",
+                        "--single-quote",
+                        "--jsx-single-quote",
+						util.escape_path(util.get_current_buffer_file_path()),
+					},
+					stdin = true,
+				}
+			end,
+
+			-- You can also define your own configuration
+		},
+
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
