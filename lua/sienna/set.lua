@@ -1,4 +1,4 @@
-
+vim.g.mapleader = " "
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -21,4 +21,12 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.autoindent = true
+
 --vim.opt.colorcolumn = "100"
+vim.cmd.colorscheme("rose-pine")
+vim.diagnostic.config({
+	virtual_text = false,
+})
+
+vim.g.diagnostics_active = false

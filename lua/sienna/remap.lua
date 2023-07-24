@@ -1,9 +1,10 @@
 local nnoremap = require("sienna.keymap").nnoremap
 local vnoremap = require("sienna.keymap").vnoremap
+local builtin = require("telescope.builtin")
 
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>go", vim.cmd.Ex)
 
+-- Formatter
 nnoremap("<leader>F", "<cmd>Format<cr>")
 nnoremap("<leader>f", "<cmd>FormatWrite<cr>")
 
@@ -17,23 +18,12 @@ nnoremap("<C-k>", "<C-w>k")
 nnoremap("H", "<cmd>BufferLineCyclePrev<cr>")
 nnoremap("L", "<cmd>BufferLineCycleNext<cr>")
 
+-- Telsescope
+vim.keymap.set("n", "<leader>tf", builtin.find_files, {})
+vim.keymap.set("n", "<leader>tg", builtin.git_files, {})
+vim.keymap.set("n", "<leader>ps", function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+end)
 
--- TOGGLE DIAGNOSTICS ON AND OFF
-vim.g.diagnostics_active = false
---function _G.toggle_diagnostics()
---	if vim.g.diagnostics_active then
---		vim.g.diagnostics_active = false
---		--vim.lsp.diagnostic.clear()
---		vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
---	else
---		vim.g.diagnostics_active = true
---		vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
---			virtual_text = true,
---			signs = true,
---			underline = true,
---			update_in_insert = false,
---		})
---	end
---end
-
---vim.api.nvim_set_keymap("n", "<leader>tt", ":call v:lua.toggle_diagnostics()<CR>", { noremap = true, silent = true })
+-- ToggleTerm
+nnoremap("<leader>tt", "<cmd>ToggleTerm<cr>")

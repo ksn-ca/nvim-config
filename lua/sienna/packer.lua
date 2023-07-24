@@ -62,11 +62,12 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	-- adds indentation lines to ui
+	-- adds pretty indentation lines to ui
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- auto closing brackets
-	use("jiangmiao/auto-pairs")
+	-- use("jiangmiao/auto-pairs")
+	use("m4xshen/autoclose.nvim")
 
 	-- line comments
 	use("tpope/vim-commentary")
@@ -84,16 +85,15 @@ return require("packer").startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
-	--use 'sbdchd/neoformat'
+	-- tabs with open files
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
+	-- format code with a style guide
 	use({ "mhartington/formatter.nvim" })
 
+	-- open terminal inside nvim
 	use({
 		"akinsho/toggleterm.nvim",
 		tag = "*",
-		config = function()
-			require("toggleterm").setup()
-		end,
 	})
 end)
