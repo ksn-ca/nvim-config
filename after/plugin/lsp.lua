@@ -35,8 +35,7 @@ lsp.ensure_installed({
 	"eslint",
 	-- "prettier",
 	-- "prettierd",
-	"pyright",
-	-- "stylua",
+	-- "pyright", "stylua",
 	"graphql",
 	"r_language_server",
 })

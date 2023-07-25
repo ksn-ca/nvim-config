@@ -17,26 +17,26 @@ require("formatter").setup({
 			require("formatter.filetypes.lua").stylua,
 
 			-- You can also define your own configuration
-			function()
-				-- Supports conditional formatting
-				if util.get_current_buffer_file_name() == "special.lua" then
-					return nil
-				end
+			-- function()
+			-- 	-- Supports conditional formatting
+			-- 	if util.get_current_buffer_file_name() == "special.lua" then
+			-- 		return nil
+			-- 	end
 
-				-- Full specification of configurations is down below and in Vim help
-				-- files
-				return {
-					exe = "stylua",
-					args = {
-						"--search-parent-directories",
-						"--stdin-filepath",
-						util.escape_path(util.get_current_buffer_file_path()),
-						"--",
-						"-",
-					},
-					stdin = true,
-				}
-			end,
+			-- 	-- Full specification of configurations is down below and in Vim help
+			-- 	-- files
+			-- 	return {
+			-- 		exe = "stylua",
+			-- 		args = {
+			-- 			"--search-parent-directories",
+			-- 			"--stdin-filepath",
+			-- 			util.escape_path(util.get_current_buffer_file_path()),
+			-- 			"--",
+			-- 			"-",
+			-- 		},
+			-- 		stdin = true,
+			-- 	}
+			-- end,
 		},
 
 		python = {
@@ -45,6 +45,17 @@ require("formatter").setup({
 			require("formatter.filetypes.python").autopep8,
 
 			-- You can also define your own configuration
+			-- function()
+			-- 	-- Full specification of configurations is down below and in Vim help
+			-- 	-- files
+			-- 	return {
+			-- 		exe = "isort",
+			-- 		args = {
+			-- 			util.escape_path(util.get_current_buffer_file_path()),
+			-- 		},
+			-- 		stdin = true,
+			-- 	}
+			-- end,
 		},
 
 		javascript = {
@@ -59,9 +70,9 @@ require("formatter").setup({
 					args = {
 						"--write",
 						"--no-semi",
-                        "-use-tabs=false",
-                        "--single-quote",
-                        "--jsx-single-quote",
+						"-use-tabs=false",
+						"--single-quote",
+						"--jsx-single-quote",
 						util.escape_path(util.get_current_buffer_file_path()),
 					},
 					stdin = true,
@@ -83,9 +94,9 @@ require("formatter").setup({
 					args = {
 						"--write",
 						"--no-semi",
-                        "-use-tabs=false",
-                        "--single-quote",
-                        "--jsx-single-quote",
+						"-use-tabs=false",
+						"--single-quote",
+						"--jsx-single-quote",
 						util.escape_path(util.get_current_buffer_file_path()),
 					},
 					stdin = true,

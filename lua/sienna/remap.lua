@@ -27,3 +27,4 @@ end)
 
 -- ToggleTerm
 nnoremap("<leader>tt", "<cmd>ToggleTerm<cr>")
+-- additional toggle term remaps are in after/plugin/toggleterm.lua

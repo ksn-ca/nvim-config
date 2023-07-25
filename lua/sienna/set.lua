@@ -30,3 +30,4 @@ vim.diagnostic.config({
 })
 
 vim.g.diagnostics_active = false
+vim.opt.clipboard:append({ "unnamed" })
