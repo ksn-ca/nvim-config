@@ -25,6 +25,15 @@ vim.keymap.set("n", "<leader>ps", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 
+
 -- ToggleTerm
 nnoremap("<leader>tt", "<cmd>ToggleTerm<cr>")
 -- additional toggle term remaps are in after/plugin/toggleterm.lua
+
+
+-- Trouble (diagnostic)
+nnoremap ('<leader>td', '<cmd>TroubleToggle workspace_diagnostics<cr>')
+-- nnoremap ('<leader>xw', '<cmd>TroubleToggle workspace_diagnostics<cr>')
+-- nnoremap ('<leader>xd', '<cmd>TroubleToggle document_diagnostics<cr>')
+nnoremap ('<leader>tq', '<cmd>TroubleToggle quickfix<cr>')
+nnoremap ('<leader>tl', '<cmd>TroubleToggle loclist<cr>')

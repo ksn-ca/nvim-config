@@ -96,4 +96,12 @@ return require("packer").startup(function(use)
 		"akinsho/toggleterm.nvim",
 		tag = "*",
 	})
+
+	-- diagnostics
+	use({
+		"folke/trouble.nvim",
+		requires = { "nvim-tree/nvim-web-devicons" },
+	})
+
+    use 'tpope/vim-suround'
 end)
