@@ -17,6 +17,7 @@ nnoremap("<C-k>", "<C-w>k")
 -- Buffers
 nnoremap("H", "<cmd>BufferLineCyclePrev<cr>")
 nnoremap("L", "<cmd>BufferLineCycleNext<cr>")
+nnoremap("<leader>cb", "<cmd>BufferLineCloseOthers<cr>")
 
 -- Telsescope
 vim.keymap.set("n", "<leader>tf", builtin.find_files, {})
@@ -24,6 +25,7 @@ vim.keymap.set("n", "<leader>tg", builtin.git_files, {})
 vim.keymap.set("n", "<leader>ps", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+nnoremap("<c-t>", "<cmd>Telescope live_grep<cr>")
 
 
 -- ToggleTerm
@@ -37,3 +39,4 @@ nnoremap ('<leader>td', '<cmd>TroubleToggle workspace_diagnostics<cr>')
 -- nnoremap ('<leader>xd', '<cmd>TroubleToggle document_diagnostics<cr>')
 nnoremap ('<leader>tq', '<cmd>TroubleToggle quickfix<cr>')
 nnoremap ('<leader>tl', '<cmd>TroubleToggle loclist<cr>')
+
