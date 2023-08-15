@@ -1,7 +1,23 @@
-require'nvim-treesitter.configs'.setup {
-	-- A list of parser names, or "all" (the five listed parsers should always be installed)
-	ensure_installed = { "python", "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },
+require("nvim-treesitter.configs").setup({
 
+	-- nvim-ts-autotag
+	autotag = {
+		enable = true,
+	},
+
+	-- A list of parser names, or "all" (the five listed parsers should always be installed)
+	ensure_installed = { "python", "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query", "tsx", "html", "css" },
+
+	context_commentstring = {
+		enable = true,
+	},
+
+	-- SUPPORTED BY TS COMMENTSTRING PLUGIN
+	-- ensure_installed = {
+	--   'astro', 'css', 'glimmer', 'graphql', 'html', 'javascript',
+	--   'lua', 'nix', 'php', 'python', 'scss', 'svelte', 'tsx', 'twig',
+	--   'typescript', 'vim', 'vue',
+	-- },
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,
 
@@ -11,7 +27,7 @@ require'nvim-treesitter.configs'.setup {
 
 	-- List of parsers to ignore installing (for "all")
 	-- ignore_install = { "javascript" },
-	indent = {enable = true},
+	indent = { enable = true },
 
 	highlight = {
 		enable = true,
@@ -37,4 +53,4 @@ require'nvim-treesitter.configs'.setup {
 		additional_vim_regex_highlighting = false,
 	},
 	incremental_selection = { enable = true },
-}
+})

@@ -40,6 +40,9 @@ return require("packer").startup(function(use)
 	-- git stuff
 	use("tpope/vim-fugitive")
 
+	-- git signs
+	use("lewis6991/gitsigns.nvim")
+
 	-- lsp stuff
 	use({
 		"VonHeikemen/lsp-zero.nvim",
@@ -103,5 +106,18 @@ return require("packer").startup(function(use)
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
 
-    use 'tpope/vim-suround'
+	-- Surround stuff with brackets and ticks
+	use("tpope/vim-surround")
+
+	-- Autocompletes HTML tags
+	use("windwp/nvim-ts-autotag")
+
+	-- smart comments (mostly for react)
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+
+    -- color matching brackets
+	use("hiphish/rainbow-delimiters.nvim")
+
+    use('ray-x/lsp_signature.nvim')
+
 end)

@@ -3,9 +3,9 @@ require("autoclose").setup({
 		["("] = { escape = false, close = true, pair = "()", disabled_filetypes = {} },
 		["["] = { escape = false, close = true, pair = "[]", disabled_filetypes = {} },
 		["{"] = { escape = false, close = true, pair = "{}", disabled_filetypes = {} },
-		["<"] = { escape = false, close = true, pair = "<>", disabled_filetypes = {} },
+		-- ["<"] = { escape = false, close = true, pair = "<>", disabled_filetypes = {} },
 
-		[">"] = { escape = true, close = false, pair = "<>", disabled_filetypes = {} },
+		-- [">"] = { escape = true, close = false, pair = "<>", disabled_filetypes = {} },
 		[")"] = { escape = true, close = false, pair = "()", disabled_filetypes = {} },
 		["]"] = { escape = true, close = false, pair = "[]", disabled_filetypes = {} },
 		["}"] = { escape = true, close = false, pair = "{}", disabled_filetypes = {} },

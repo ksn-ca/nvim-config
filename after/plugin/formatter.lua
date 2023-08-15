@@ -9,7 +9,7 @@ require("formatter").setup({
 		},
 
 		python = {
-			require("formatter.filetypes.python").autopep8,
+			require("formatter.filetypes.python").black,
 		},
 
 		javascript = {
@@ -68,6 +68,24 @@ require("formatter").setup({
 
 		typescriptreact = {
 			require("formatter.filetypes.typescriptreact").prettierd,
+			function()
+				return {
+					exe = "prettierd",
+					args = {
+						"--write",
+						"--no-semi",
+						"-use-tabs=false",
+						"--single-quote",
+						"--jsx-single-quote",
+						util.escape_path(util.get_current_buffer_file_path()),
+					},
+					stdin = true,
+				}
+			end,
+		},
+
+		css = {
+			require("formatter.filetypes.css").prettierd,
 			function()
 				return {
 					exe = "prettierd",

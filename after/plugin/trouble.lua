@@ -1,7 +1,7 @@
 require("trouble").setup({
 	position = "right",
 	mode = "workspace_diagnostics",
-	severity = vim.diagnostic.severity.ERROR,
+	-- severity = vim.diagnostic.severity.ERROR,
     action_keys = { -- key mappings for actions in the trouble list
         -- map to {} to remove a mapping, for example:
         -- close = {},
@@ -24,4 +24,4 @@ require("trouble").setup({
         previous = "k", -- previous item
         next = "j" -- next item
     },
-})
+}) 
