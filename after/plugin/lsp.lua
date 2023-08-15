@@ -40,4 +40,3 @@ lsp.ensure_installed({
 })
 
 lsp.setup()
-

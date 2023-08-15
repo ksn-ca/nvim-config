@@ -115,9 +115,9 @@ return require("packer").startup(function(use)
 	-- smart comments (mostly for react)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
-    -- color matching brackets
+	-- color matching brackets
 	use("hiphish/rainbow-delimiters.nvim")
 
-    use('ray-x/lsp_signature.nvim')
-
+	-- LSP hover hints
+	use("ray-x/lsp_signature.nvim")
 end)

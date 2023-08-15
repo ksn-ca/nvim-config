@@ -1,5 +1,5 @@
 vim.opt.termguicolors = true
-require("bufferline").setup{
+require("bufferline").setup({
 	options = {
 		numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
 		--close_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -160,4 +160,4 @@ require("bufferline").setup{
 			bg = { attribute = "bg", highlight = "Normal" },
 		},
 	},
-}
+})

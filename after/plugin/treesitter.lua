@@ -6,7 +6,19 @@ require("nvim-treesitter.configs").setup({
 	},
 
 	-- A list of parser names, or "all" (the five listed parsers should always be installed)
-	ensure_installed = { "python", "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query", "tsx", "html", "css" },
+	ensure_installed = {
+		"python",
+		"javascript",
+		"typescript",
+		"c",
+		"lua",
+		"vim",
+		"vimdoc",
+		"query",
+		"tsx",
+		"html",
+		"css",
+	},
 
 	context_commentstring = {
 		enable = true,
@@ -18,6 +30,7 @@ require("nvim-treesitter.configs").setup({
 	--   'lua', 'nix', 'php', 'python', 'scss', 'svelte', 'tsx', 'twig',
 	--   'typescript', 'vim', 'vue',
 	-- },
+
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,
 

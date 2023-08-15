@@ -28,16 +28,19 @@ end)
 nnoremap("<c-t>", "<cmd>Telescope live_grep<cr>")
 nnoremap("<leader>fb", "<cmd>Telescope buffers<cr>")
 
-
 -- ToggleTerm
 nnoremap("<leader>tt", "<cmd>ToggleTerm<cr>")
 -- additional toggle term remaps are in after/plugin/toggleterm.lua
 
-
 -- Trouble (diagnostic)
-nnoremap ('<leader>td', '<cmd>TroubleToggle workspace_diagnostics<cr>')
+nnoremap("<leader>td", "<cmd>TroubleToggle workspace_diagnostics<cr>")
 -- nnoremap ('<leader>xw', '<cmd>TroubleToggle workspace_diagnostics<cr>')
 -- nnoremap ('<leader>xd', '<cmd>TroubleToggle document_diagnostics<cr>')
-nnoremap ('<leader>tq', '<cmd>TroubleToggle quickfix<cr>')
-nnoremap ('<leader>tl', '<cmd>TroubleToggle loclist<cr>')
+nnoremap("<leader>tq", "<cmd>TroubleToggle quickfix<cr>")
+nnoremap("<leader>tl", "<cmd>TroubleToggle loclist<cr>")
 
+-- FUGITIVE GIT
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+
+-- UNDOO TREE
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
