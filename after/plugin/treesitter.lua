@@ -3,6 +3,7 @@ require("nvim-treesitter.configs").setup({
 	-- nvim-ts-autotag
 	autotag = {
 		enable = true,
+		enable_close_on_slash = false,
 	},
 
 	-- A list of parser names, or "all" (the five listed parsers should always be installed)

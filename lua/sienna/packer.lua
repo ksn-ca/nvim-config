@@ -107,7 +107,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Surround stuff with brackets and ticks
-	use("tpope/vim-surround")
+	-- use("tpope/vim-surround")
 
 	-- Autocompletes HTML tags
 	use("windwp/nvim-ts-autotag")
@@ -120,4 +120,28 @@ return require("packer").startup(function(use)
 
 	-- LSP hover hints
 	use("ray-x/lsp_signature.nvim")
+
+	-- highlights colours (mostly for css)
+	use("norcalli/nvim-colorizer.lua")
+
+	-- forces good nvim habits (temp plugin)
+	use({
+		"m4xshen/hardtime.nvim",
+		requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+	})
+
+	-- bookmarks
+	use("chentoast/marks.nvim")
+
+	-- Surround stuff with brackets and ticks in LUA
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+	})
+
+	-- better search
+	use("folke/flash.nvim")
+
+	-- use({ "scheisa/relpointers.nvim" })
+    use('RRethy/vim-illuminate')
 end)
