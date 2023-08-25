@@ -32,7 +32,7 @@ return require("packer").startup(function(use)
 		run = ":TSUpdate",
 	})
 
-	use("nvim-treesitter/playground")
+	-- use("nvim-treesitter/playground")
 
 	-- see undo history
 	use("mbbill/undotree")
@@ -140,6 +140,12 @@ return require("packer").startup(function(use)
 	use("folke/flash.nvim")
 
 	-- use({ "scheisa/relpointers.nvim" })
-    -- highlights words that are the same
-    use('RRethy/vim-illuminate')
+	-- highlights words that are the same
+	use("RRethy/vim-illuminate")
+
+	-- delete does not override the yank. adds a separate cut function
+	use("gbprod/cutlass.nvim")
+
+    -- yank history
+	use("gbprod/yanky.nvim")
 end)

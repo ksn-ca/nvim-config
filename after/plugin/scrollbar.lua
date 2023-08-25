@@ -1,0 +1,25 @@
+-- require("scrollbar").setup({
+-- 	show = true,
+-- 	show_in_active_only = false,
+-- 	handle = {
+-- 		text = " ",
+-- 		blend = 40, -- Integer between 0 and 100. 0 for fully opaque and 100 to full transparent. Defaults to 30.
+-- 		color = '#9ba5a3',
+-- 		color_nr = nil, -- cterm
+-- 		highlight = "CursorColumn",
+-- 		hide_if_all_visible = true, -- Hides handle if all lines are visible
+-- 	},
+-- 	marks = {
+-- 		Cursor = {
+-- 			text = "",
+-- 			priority = 0,
+-- 			gui = nil,
+-- 			color = nil,
+-- 			cterm = nil,
+-- 			color_nr = nil, -- cterm
+-- 			highlight = "Normal",
+-- 		},
+-- 	},
+-- })
+-- -- require("scrollbar.handlers.gitsigns").setup()
+

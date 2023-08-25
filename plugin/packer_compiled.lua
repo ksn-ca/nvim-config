@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cutlass.nvim"] = {
+    loaded = true,
+    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/cutlass.nvim",
+    url = "https://github.com/gbprod/cutlass.nvim"
+  },
   ["flash.nvim"] = {
     loaded = true,
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/flash.nvim",
@@ -133,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["marks.nvim"] = {
-    loaded = true,
-    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/marks.nvim",
-    url = "https://github.com/chentoast/marks.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -225,6 +225,11 @@ _G.packer_plugins = {
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["satellite.nvim"] = {
+    loaded = true,
+    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/satellite.nvim",
+    url = "https://github.com/lewis6991/satellite.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -259,6 +264,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["yanky.nvim"] = {
+    loaded = true,
+    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/yanky.nvim",
+    url = "https://github.com/gbprod/yanky.nvim"
   }
 }
 
