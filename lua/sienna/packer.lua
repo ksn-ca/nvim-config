@@ -130,9 +130,6 @@ return require("packer").startup(function(use)
 		requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
 	})
 
-	-- bookmarks
-	use("chentoast/marks.nvim")
-
 	-- Surround stuff with brackets and ticks in LUA
 	use({
 		"kylechui/nvim-surround",
@@ -143,5 +140,6 @@ return require("packer").startup(function(use)
 	use("folke/flash.nvim")
 
 	-- use({ "scheisa/relpointers.nvim" })
+    -- highlights words that are the same
     use('RRethy/vim-illuminate')
 end)
