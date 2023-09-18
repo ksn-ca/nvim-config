@@ -204,11 +204,6 @@ _G.packer_plugins = {
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  playground = {
-    loaded = true,
-    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/playground",
-    url = "https://github.com/nvim-treesitter/playground"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -225,10 +220,10 @@ _G.packer_plugins = {
     path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
-  ["satellite.nvim"] = {
+  ["symbols-outline.nvim"] = {
     loaded = true,
-    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/satellite.nvim",
-    url = "https://github.com/lewis6991/satellite.nvim"
+    path = "/Users/kseniadaich/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

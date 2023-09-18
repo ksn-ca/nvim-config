@@ -146,6 +146,8 @@ return require("packer").startup(function(use)
 	-- delete does not override the yank. adds a separate cut function
 	use("gbprod/cutlass.nvim")
 
-    -- yank history
+	-- yank history
 	use("gbprod/yanky.nvim")
+	-- use('sindrets/diffview.nvim')
+    use('simrat39/symbols-outline.nvim')
 end)
